@@ -1,0 +1,249 @@
+{
+  "alerted": {},
+  "checked_on": "2026-10-20",
+  "events": {
+    "eveeno:110946688": {
+      "dates": [
+        "15.10.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": false,
+      "last_seen": "2026-10-20",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "Der monatliche Austausch zur Mittagszeit - mit einem Vortrag und viel Raum für Austausch und Fragen. Die Beiträge im LunchLab sind eigenständige Vorträge, teilweise sind sie auch als kurze „Teaser“ für einen weiteren Workshop gedacht.",
+      "url": "https://eveeno.com/110946688"
+    },
+    "eveeno:120294787": {
+      "dates": [
+        "03.12.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": false,
+      "last_seen": "2026-10-20",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "Info-Webinar kumulative Dissertation in der FE IV",
+      "url": "https://eveeno.com/120294787"
+    },
+    "eveeno:129870485": {
+      "dates": [
+        "06.11.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": false,
+      "last_seen": "2026-10-20",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "Info-Webinar kumulative Dissertation in der FE I",
+      "url": "https://eveeno.com/129870485"
+    },
+    "eveeno:152596514": {
+      "dates": [
+        "15.10.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": false,
+      "last_seen": "2026-10-20",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "Info-Webinar kumulative Dissertation in der FE III",
+      "url": "https://eveeno.com/152596514"
+    },
+    "eveeno:153511120": {
+      "dates": [
+        "18.11.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": false,
+      "last_seen": "2026-10-20",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "DokKonvent - Einladung zur Sitzung des zentralen Konvents der Doktorandinnen und Doktoranden",
+      "url": "https://eveeno.com/153511120"
+    },
+    "eveeno:209873125": {
+      "dates": [
+        "26.10.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": true,
+      "last_seen": "2026-10-20",
+      "notified_intro": true,
+      "status": {
+        "web": "closed"
+      },
+      "title": "Überfachliche Qualifizierungen",
+      "url": "https://eveeno.com/209873125"
+    },
+    "eveeno:245986192": {
+      "dates": [
+        "04.12.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": true,
+      "last_seen": "2026-10-20",
+      "notified_intro": true,
+      "status": {
+        "web": "closed"
+      },
+      "title": "Gute wissenschaftliche Praxis in der Promotion",
+      "url": "https://eveeno.com/245986192"
+    },
+    "eveeno:268668321": {
+      "dates": [
+        "03.12.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": false,
+      "last_seen": "2026-10-20",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "Info-Webinar Erstellung des Exposés für den Annahmeantrag in der FE IV",
+      "url": "https://eveeno.com/268668321"
+    },
+    "eveeno:327107027": {
+      "dates": [
+        "06.11.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": false,
+      "last_seen": "2026-10-20",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "Info-Webinar Erstellung des Exposés für den Annahmeantrag in der FE I",
+      "url": "https://eveeno.com/327107027"
+    },
+    "eveeno:372336504": {
+      "dates": [
+        "11.11.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": false,
+      "last_seen": "2026-10-20",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "LunchLab: „Hörst du deine Schubladen klicken?“",
+      "url": "https://eveeno.com/372336504"
+    },
+    "eveeno:442535319": {
+      "dates": [
+        "26.10.2026",
+        "09.11.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": true,
+      "last_seen": "2026-10-20",
+      "notified_intro": true,
+      "status": {
+        "web": "closed"
+      },
+      "title": "Doctoral Defence Training: Confident Presentation",
+      "url": "https://eveeno.com/442535319"
+    },
+    "eveeno:517362696": {
+      "dates": [
+        "23.10.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": true,
+      "last_seen": "2026-10-20",
+      "notified_intro": true,
+      "status": {
+        "web": "closed"
+      },
+      "title": "Im Einführungsseminar entwickeln Promovierende eine individuelle Strategie für ihr Dissertationsprojekt –",
+      "url": "https://eveeno.com/517362696"
+    },
+    "eveeno:755678515": {
+      "dates": [
+        "29.10.2026",
+        "26.11.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": true,
+      "last_seen": "2026-10-20",
+      "notified_intro": true,
+      "status": {
+        "web": "open"
+      },
+      "title": "Karriereworkshop „Promotion und dann? Gestalte deinen Weg nach der Promotion, selbstbestimmt, wirksam und vernetzt“",
+      "url": "https://eveeno.com/755678515"
+    },
+    "eveeno:881446894": {
+      "dates": [
+        "23.10.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": true,
+      "last_seen": "2026-10-20",
+      "notified_intro": true,
+      "status": {
+        "web": "open"
+      },
+      "title": "Forschungskolloquien",
+      "url": "https://eveeno.com/881446894"
+    },
+    "url:https://docs.google.com/forms/d/1VNfpJdM0g0Anbrn49Rf3dr0qmd4Ya38ZyL65TEN3NUk/viewform?pli=1&pli=1&edit_requested=true": {
+      "dates": [
+        "02.11.2026",
+        "03.11.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": true,
+      "last_seen": "2026-10-20",
+      "notified_intro": true,
+      "status": {
+        "web": "open"
+      },
+      "title": "Academic Retreat:",
+      "url": "https://docs.google.com/forms/d/1VNfpJdM0g0Anbrn49Rf3dr0qmd4Ya38ZyL65TEN3NUk/viewform?pli=1&pli=1&edit_requested=true"
+    },
+    "url:https://nextcloud.hs-furtwangen.de/apps/forms/s/ZMrmHXt48D3eabgyoZMcLp7K": {
+      "dates": [
+        "17.11.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": true,
+      "last_seen": "2026-10-20",
+      "notified_intro": true,
+      "status": {
+        "web": "open"
+      },
+      "title": "Promovierenden-Kolloquium des",
+      "url": "https://nextcloud.hs-furtwangen.de/apps/forms/s/ZMrmHXt48D3eabgyoZMcLp7K"
+    },
+    "url:https://www.hhz.de/anmeldung-promovierenden-kolloquium": {
+      "dates": [
+        "26.11.2026"
+      ],
+      "first_seen": "2026-10-20",
+      "intro": true,
+      "last_seen": "2026-10-20",
+      "notified_intro": true,
+      "status": {
+        "web": "open"
+      },
+      "title": "Promovierendenkolloquium",
+      "url": "https://www.hhz.de/anmeldung-promovierenden-kolloquium#c31287"
+    }
+  },
+  "fail_count": 0,
+  "initialized": true
+}
