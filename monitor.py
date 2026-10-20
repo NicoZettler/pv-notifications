@@ -29,6 +29,7 @@ import os
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup, Comment, NavigableString, Tag
@@ -59,6 +60,11 @@ INTRO_RE = re.compile(
     re.I,
 )
 INTRO_HEADING = "einführungsveranstaltung"
+# Abschnittstitel der Programmseite. Auf der Wix-Seite sind nicht alle als Überschrift ausgezeichnet,
+# deshalb wird zusätzlich am Text erkannt, wo der nächste Abschnitt beginnt.
+SECTION_MARKERS = ("überfachliche qualifizierungen", "forschungskolloquien", "lunchlabs",
+                   "bw-car rise", "anrechnung")
+META_LINE_RE = re.compile(r"^(?:referent|zielgruppe|termin|sprache|workshop date|date|datum|lecturer|target group)", re.I)
 EVEENO_RE = re.compile(r"^https?://(?:www\.)?eveeno\.com/(\d{6,})/?(?:[?#].*)?$", re.I)
 REG_LINK_TEXT_RE = re.compile(r"ausgebucht|anmeld|warteliste|registr|verfügbar|available|book", re.I)
 CAL_STATUS_RE = re.compile(
@@ -136,6 +142,18 @@ def _next_link_text(tokens, i):
 
 def find_intro_section(tokens):
     """Liefert (start, ende, ebene) des Abschnitts 'Einführungsveranstaltungen' oder None."""
+    def section_end(start, level):
+        heading_end = next(
+            (j for j in range(start + 1, len(tokens)) if tokens[j][0] == "heading" and tokens[j][3] <= level),
+            len(tokens),
+        )
+        marker_end = next(
+            (j for j in range(start + 1, len(tokens))
+             if tokens[j][0] in ("text", "heading") and is_section_title(tokens[j][1])),
+            len(tokens),
+        )
+        return min(heading_end, marker_end)
+
     candidates = [
         (lvl, i) for i, (kind, text, _, lvl) in enumerate(tokens)
         if kind == "heading" and INTRO_HEADING in text.lower()
@@ -143,24 +161,30 @@ def find_intro_section(tokens):
     ]
     if candidates:
         level, start = min(candidates)  # höchste Gliederungsebene, bei Gleichstand die erste
-        end = next(
-            (j for j in range(start + 1, len(tokens)) if tokens[j][0] == "heading" and tokens[j][3] <= level),
-            len(tokens),
-        )
-        return start, end, level
+        return start, section_end(start, level), level
 
     # Rückfallebene ohne Überschriften-Tags: reine Textsuche
-    markers = ("überfachliche qualifizierungen", "forschungskolloquien", "lunchlabs", "bw-car rise", "anrechnung")
     for i, (kind, text, _, _) in enumerate(tokens):
         if kind == "text" and text.lower() == "einführungsveranstaltungen" \
                 and not _next_link_text(tokens, i).startswith("zu den"):
-            end = next(
-                (j for j in range(i + 1, len(tokens))
-                 if tokens[j][0] == "text" and tokens[j][1].lower().startswith(markers)),
-                len(tokens),
-            )
-            return i, end, 2
+            return i, section_end(i, 2), 2
     return None
+
+
+def is_section_title(text: str) -> bool:
+    """Kurzer Text, der einen Abschnitt der Programmseite einleitet (nicht dessen Beschreibungssatz)."""
+    low = text.lower()
+    return len(text) <= 70 and low.startswith(SECTION_MARKERS) and not re.search(r"\b(bieten|ermöglichen|richtet)\b", low)
+
+
+def block_title(lines: list[str], fallback: str) -> str:
+    """Titel eines Veranstaltungsblocks: die Zeilen vor 'Referent', 'Termin', 'Zielgruppe' usw."""
+    if not lines:
+        return fallback
+    cut = next((i for i, line in enumerate(lines) if META_LINE_RE.match(line)), len(lines))
+    head = lines[:cut] or lines[:1]
+    title = " ".join(head)
+    return title if len(title) <= 150 else head[-1]
 
 
 def is_registration_link(text: str, href: str) -> bool:
@@ -191,6 +215,9 @@ def parse_page(html: str):
                 buf.append(text)
             continue
         if kind == "text":
+            if text.lower().startswith(SECTION_MARKERS):  # Abschnittstitel oder -beschreibung ohne Überschrift-Tag
+                buf = []
+                continue
             buf = (buf + [text])[-40:]
             continue
         if not is_registration_link(text, href):
@@ -205,7 +232,7 @@ def parse_page(html: str):
         ev = events.get(key)
         if ev is None:
             events[key] = {
-                "title": buf[0] if buf else text,
+                "title": block_title(buf, text),
                 "text": block,
                 "url": href,
                 "dates": sorted(set(DATE_RE.findall(block)), key=_date_sort),
@@ -228,12 +255,13 @@ def _date_sort(d: str):
 
 # --------------------------------------------------------------------------- eveeno-Kalender
 
-def parse_calendar(html: str) -> dict[str, dict]:
+def parse_calendar(html: str, base_url: str = "https://eveeno.com/") -> dict[str, dict]:
     """Liest den Veranstaltungskalender, den jede eveeno-Eventseite des Verbands mitliefert."""
     soup = BeautifulSoup(html, "html.parser")
     grouped: dict[str, list[str]] = {}
-    for a in soup.find_all("a", href=True):
-        m = EVEENO_RE.match(a["href"].strip())
+    links = soup.find_all("a", href=True)
+    for a in links:
+        m = EVEENO_RE.match(urljoin(base_url, a["href"].strip()))  # Links sind dort teils relativ
         if not m:
             continue
         text = clean(a.get_text(" "))
@@ -241,7 +269,7 @@ def parse_calendar(html: str) -> dict[str, dict]:
             grouped.setdefault(m.group(1), []).append(text)
     events = {}
     for eid, texts in grouped.items():
-        status = next((t for t in texts if CAL_STATUS_RE.match(t)), "")
+        status = next((t for t in texts if len(t) <= 30 and CAL_STATUS_RE.search(t.strip(" »›>"))), "")
         titles = [t for t in texts if t != status]
         if not status or not titles:
             continue
@@ -254,6 +282,7 @@ def parse_calendar(html: str) -> dict[str, dict]:
             "in_section": False,
             "status_text": {"eveeno": status},
         }
+    print(f"eveeno-Seite: {len(links)} Links, {len(grouped)} Event-IDs, {len(events)} Kalendereinträge erkannt")
     return events
 
 
@@ -344,7 +373,8 @@ def collect(state: dict) -> tuple[dict, list[str], bool]:
     candidates = eveeno_ids + ([state["calendar_source"]] if state.get("calendar_source") else [])
     for eid in list(dict.fromkeys(candidates))[:4]:
         try:
-            cal = parse_calendar(fetch(f"https://eveeno.com/{eid}"))
+            url = f"https://eveeno.com/{eid}"
+            cal = parse_calendar(fetch(url), url)
         except Exception as e:  # noqa: BLE001
             print(f"eveeno {eid} nicht abrufbar: {e}", file=sys.stderr)
             continue
