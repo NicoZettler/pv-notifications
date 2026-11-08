@@ -167,7 +167,7 @@
         "04.12.2026"
       ],
       "first_seen": "2026-10-20",
-      "intro": true,
+      "intro": false,
       "last_seen": "2026-11-08",
       "notified_intro": true,
       "status": {
@@ -340,6 +340,6 @@
       "url": "https://www.hhz.de/anmeldung-promovierenden-kolloquium#c31287"
     }
   },
-  "fail_count": 0,
+  "fail_count": 1,
   "initialized": true
 }
