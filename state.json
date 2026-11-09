@@ -61,6 +61,21 @@
       "title": "Info-Webinar Erstellung des Exposés für den Annahmeantrag in der FE I 27.11.2026",
       "url": "https://eveeno.com/118764376"
     },
+    "eveeno:120098812": {
+      "dates": [
+        "15.03.2027",
+        "17.03.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": false,
+      "last_seen": "2026-11-09",
+      "notified_intro": false,
+      "status": {
+        "web": "unknown"
+      },
+      "title": "The 1x1 of Project Proposal Planning: How Do I Write a Project Proposal? Trainers: Prof. Dr. Markus Schmid Mara Strenger (M.Sc.) Language: English",
+      "url": "https://eveeno.com/120098812"
+    },
     "eveeno:120294787": {
       "dates": [
         "03.12.2026"
@@ -104,6 +119,48 @@
       "title": "Info-Webinar kumulative Dissertation in der FE I",
       "url": "https://eveeno.com/129870485"
     },
+    "eveeno:132937501": {
+      "dates": [
+        "28.01.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": false,
+      "last_seen": "2026-11-09",
+      "notified_intro": false,
+      "status": {
+        "web": "unknown"
+      },
+      "title": "From Paper to Stage! Presentation Training for Doctoral Candidates Trainer: Dr. Alexander Lammers Language: English",
+      "url": "https://eveeno.com/132937501"
+    },
+    "eveeno:135357828": {
+      "dates": [
+        "26.04.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": false,
+      "last_seen": "2026-11-09",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "Was bedeutet der Einsatz von KI für die Wissensgenerierung? Implikationen für die Doktorarbeit Trainer: Prof. Dr. Carsten Herbes",
+      "url": "https://eveeno.com/135357828"
+    },
+    "eveeno:139208816": {
+      "dates": [
+        "01.03.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": true,
+      "last_seen": "2026-11-09",
+      "notified_intro": true,
+      "status": {
+        "web": "unknown"
+      },
+      "title": "Introductory Seminar „Getting Started“: The Path to a Successful Doctorate Trainer: Dr. Matteo Garavoglia Language: English",
+      "url": "https://eveeno.com/139208816"
+    },
     "eveeno:152596514": {
       "dates": [
         "15.10.2026"
@@ -133,6 +190,20 @@
       "title": "DokKonvent - Einladung zur Sitzung des zentralen Konvents der Doktorandinnen und Doktoranden 18.11.2026",
       "url": "https://eveeno.com/153511120"
     },
+    "eveeno:158315715": {
+      "dates": [
+        "21.04.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": true,
+      "last_seen": "2026-11-09",
+      "notified_intro": true,
+      "status": {
+        "web": "open"
+      },
+      "title": "Einführungsseminar „Getting Started“: Der Weg zur erfolgreichen Promotion Trainerin: Dr. Sara Rogalski",
+      "url": "https://eveeno.com/158315715"
+    },
     "eveeno:165397392": {
       "dates": [
         "10.12.2026"
@@ -146,6 +217,48 @@
       },
       "title": "BW-CAR LEAD: Promotionsbetreuung in herausfordernden Situationen – Fallarbeit, Werkzeuge und rechtliche Rahmenbedingungen 10.12.2026",
       "url": "https://eveeno.com/165397392"
+    },
+    "eveeno:183260424": {
+      "dates": [
+        "11.06.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": true,
+      "last_seen": "2026-11-09",
+      "notified_intro": true,
+      "status": {
+        "web": "open"
+      },
+      "title": "Gute wissenschaftliche Praxis in der Promotion Trainer: Prof. Dr.-Ing. (habil.) Torsten Markus",
+      "url": "https://eveeno.com/183260424"
+    },
+    "eveeno:187456004": {
+      "dates": [
+        "09.04.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": true,
+      "last_seen": "2026-11-09",
+      "notified_intro": true,
+      "status": {
+        "web": "unknown"
+      },
+      "title": "Good Scientific Practice in Doctoral Studies Trainer: Prof. Dr.-Ing. (habil.) Torsten Markus Language: English",
+      "url": "https://eveeno.com/187456004"
+    },
+    "eveeno:193901266": {
+      "dates": [
+        "08.07.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": true,
+      "last_seen": "2026-11-09",
+      "notified_intro": true,
+      "status": {
+        "web": "open"
+      },
+      "title": "Einführungsseminar „Getting Started“: Der Weg zur erfolgreichen Promotion Trainerin: Dr. Sara Rogalski",
+      "url": "https://eveeno.com/193901266"
     },
     "eveeno:209873125": {
       "dates": [
@@ -162,6 +275,21 @@
       "title": "wissenschaftsrelevanten Kompetenzfeldern, Formaten und Zeitumfängen. Doctoral Defence Training: Strategic Preparation",
       "url": "https://eveeno.com/209873125"
     },
+    "eveeno:224654029": {
+      "dates": [
+        "21.06.2027",
+        "06.07.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": false,
+      "last_seen": "2026-11-09",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "Disputationsworkshop: Praxistraining Fachvortrag Trainer: Simon Wolf",
+      "url": "https://eveeno.com/224654029"
+    },
     "eveeno:245986192": {
       "dates": [
         "04.12.2026"
@@ -177,6 +305,20 @@
       "title": "BW-CAR DEEP - Gute wissenschaftliche Praxis in der Promotion 04.12.2026",
       "url": "https://eveeno.com/245986192"
     },
+    "eveeno:258974054": {
+      "dates": [
+        "21.06.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": false,
+      "last_seen": "2026-11-09",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "Disputationsworkshop: Strategische Prüfungsvorbereitung Trainer: Simon Wolf",
+      "url": "https://eveeno.com/258974054"
+    },
     "eveeno:268668321": {
       "dates": [
         "03.12.2026"
@@ -190,6 +332,34 @@
       },
       "title": "Info-Webinar Erstellung des Exposés für den Annahmeantrag in der FE IV",
       "url": "https://eveeno.com/268668321"
+    },
+    "eveeno:310045004": {
+      "dates": [
+        "14.01.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": true,
+      "last_seen": "2026-11-09",
+      "notified_intro": true,
+      "status": {
+        "web": "open"
+      },
+      "title": "Einführungsseminar „Getting Started“: Der Weg zur erfolgreichen Promotion Trainerin: Dr. Sara Rogalski",
+      "url": "https://eveeno.com/310045004"
+    },
+    "eveeno:311782207": {
+      "dates": [
+        "19.02.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": true,
+      "last_seen": "2026-11-09",
+      "notified_intro": true,
+      "status": {
+        "web": "open"
+      },
+      "title": "Gute wissenschaftliche Praxis in der Promotion Trainer: Prof. Dr.-Ing. (habil.) Torsten Markus",
+      "url": "https://eveeno.com/311782207"
     },
     "eveeno:327107027": {
       "dates": [
@@ -205,6 +375,34 @@
       },
       "title": "Info-Webinar Erstellung des Exposés für den Annahmeantrag in der FE I",
       "url": "https://eveeno.com/327107027"
+    },
+    "eveeno:356743567": {
+      "dates": [
+        "28.01.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": false,
+      "last_seen": "2026-11-09",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "Wissenschaft auf die Bühne gebracht! Präsentationstraining für Promovierende Trainer: Dr. Alexander Lammers",
+      "url": "https://eveeno.com/356743567"
+    },
+    "eveeno:367797007": {
+      "dates": [
+        "15.04.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": false,
+      "last_seen": "2026-11-09",
+      "notified_intro": false,
+      "status": {
+        "web": "open"
+      },
+      "title": "Konstruktive Betreuungsgespräche mit Betreuenden führen Trainer: Simon Wolf",
+      "url": "https://eveeno.com/367797007"
     },
     "eveeno:372336504": {
       "dates": [
@@ -295,6 +493,20 @@
       },
       "title": "BW-CAR Treffen der Forschungseinheit II an der THMA",
       "url": "https://eveeno.com/881446894"
+    },
+    "eveeno:896711333": {
+      "dates": [
+        "07.06.2027"
+      ],
+      "first_seen": "2026-11-09",
+      "intro": true,
+      "last_seen": "2026-11-09",
+      "notified_intro": true,
+      "status": {
+        "web": "unknown"
+      },
+      "title": "Introductory Seminar „Getting Started“: The Path to a Successful Doctorate Trainerin: Dr. Matteo Garavoglia Language: English",
+      "url": "https://eveeno.com/896711333"
     },
     "url:https://docs.google.com/forms/d/1VNfpJdM0g0Anbrn49Rf3dr0qmd4Ya38ZyL65TEN3NUk/viewform?pli=1&pli=1&edit_requested=true": {
       "dates": [
