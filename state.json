@@ -467,14 +467,15 @@
     },
     "eveeno:590693430": {
       "dates": [
-        "19.01.2027"
+        "19.01.2026"
       ],
       "first_seen": "2026-11-11",
       "intro": false,
       "last_seen": "2026-11-11",
       "notified_intro": false,
       "status": {
-        "eveeno": "open"
+        "eveeno": "open",
+        "web": "open"
       },
       "title": "BW-CAR LunchLab: Sichtbar publizieren: Qualität, Publikationskultur und die Wahl geeigneter Publikationsorte 19.01.2027",
       "url": "https://eveeno.com/590693430"
