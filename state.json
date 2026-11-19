@@ -1,7 +1,5 @@
 {
-  "alerted": {
-    "structure": true
-  },
+  "alerted": {},
   "calendar_source": "245986192",
   "checked_on": "2026-11-19",
   "events": {
@@ -297,7 +295,7 @@
         "04.12.2026"
       ],
       "first_seen": "2026-10-20",
-      "intro": false,
+      "intro": true,
       "last_seen": "2026-11-19",
       "notified_intro": true,
       "status": {
@@ -469,7 +467,7 @@
     },
     "eveeno:590693430": {
       "dates": [
-        "19.01.2027"
+        "19.01.2026"
       ],
       "first_seen": "2026-11-11",
       "intro": false,
